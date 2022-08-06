@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "variants",
+  "info": {
+    "singularName": "variant",
+    "pluralName": "variants",
+    "displayName": "Variant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "variant_name": {
+      "type": "string"
+    },
+    "variant_price": {
+      "type": "biginteger"
+    },
+    "variant_discount": {
+      "type": "integer"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "variants"
+    },
+    "stock_variant": {
+      "type": "biginteger"
+    },
+    "is_discount_variant": {
+      "type": "boolean"
+    }
+  }
+}
