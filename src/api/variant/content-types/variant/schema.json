@@ -27,10 +27,10 @@
       "target": "api::product.product",
       "inversedBy": "variants"
     },
-    "stock_variant": {
-      "type": "biginteger"
-    },
     "is_discount_variant": {
+      "type": "boolean"
+    },
+    "available": {
       "type": "boolean"
     }
   }

@@ -28,6 +28,12 @@
     },
     "end_date": {
       "type": "datetime"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "voucher"
     }
   }
 }
