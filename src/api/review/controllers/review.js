@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  shipping controller
+ *  review controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::shipping.shipping');
+module.exports = createCoreController('api::review.review');
