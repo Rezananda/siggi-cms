@@ -23,10 +23,10 @@ module.exports = ({ env }) => ({
       config: {
         provider: 'strapi-provider-email-sendinblue',
         providerOptions: {
-          sendinblue_api_key: env('SIB_API_KEY'),
-          sendinblue_default_replyto: env('SIB_DEFAULT_REPLY_TO'),
-          sendinblue_default_from: env('SIB_DEFAULT_FROM'),
-          sendinblue_default_from_name: env('SIB_DEFAULT_FROM_NAME'),
+          sendinblue_api_key: env('SIB_API_KEY', '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'),
+          sendinblue_default_replyto: env('SIB_DEFAULT_REPLY_TO', 'gadgetsexofficial@gmail.com'),
+          sendinblue_default_from: env('SIB_DEFAULT_FROM', 'gadgetsexofficial@gmail.com'),
+          sendinblue_default_from_name: env('SIB_DEFAULT_FROM_NAME', 'Siggi Store'),
         },
       },
     },
