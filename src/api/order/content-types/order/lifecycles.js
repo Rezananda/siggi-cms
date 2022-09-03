@@ -8,8 +8,8 @@ module.exports = {
                 from: 'siggistore@mail.com', //e.g. single sender verification in SendGrid
                 replyTo: 'siggistore@mail.com',
                 subject: 'The Strapi Email plugin worked successfully',
-                text: 'Hello world!',
-                html: 'Hello world!',  
+                text: 'Hello world',
+                html: 'Hello world',  
             })
         } catch(err) {
             console.log(err);
