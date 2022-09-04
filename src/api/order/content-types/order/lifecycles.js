@@ -8,7 +8,7 @@ module.exports = {
                 replyTo: 'siggistore@mail.com',
                 subject: `Pesanan ${result.transaction_id}`,
                 html: `
-                <div style="padding: 1rem; background-color: white">
+                <div style="background-color: white">
                     <h3>Terima kasih sudah berbelanja di siggi.id.</h3>
                     <div style="margin-bottom: 10px; background-color: #f5f5f4; padding: 10px; border-radius: 5px">
                         <div style="margin-bottom: 10px">
