@@ -27,6 +27,10 @@ module.exports = {
                             <h4 style="margin: 0; margin-bottom: 5px">Status:</h4>
                             <p style="margin: 0">Menunggu Pembayaran</p>
                         </div>
+                        <div style="margin-bottom: 10px">
+                            <h4 style="margin: 0; margin-bottom: 5px">Kode Pesanan:</h4>
+                            <p style="margin: 0">${result.transaction_id}</p>
+                        </div>
                     </div>
                     <div style="border-bottom: 1px solid; border-color:#d6d3d1; margin-bottom:10px"></div>
                     <div>
@@ -43,8 +47,9 @@ module.exports = {
                             ${result.detail_order.map((val, index) => (
                                 `
                                 <li style="margin-bottom: 5px;">
-                                    <p style="margin: 0;">${val.name}</p>
-                                    <p style="margin: 0; font-weight: bold">Rp: ${val.variant_price_final}</p>
+                                    <div></
+                                    <p style="margin: 0;">${val.name} (${val.variant_name})</p>
+                                    <p style="margin: 0; font-weight: bold">Rp: ${val.is_discount_variant ? val.variant_price_final : val.variant_price} (${val.qty})</p>
                                 </li>
                                 `
                             ))}
@@ -54,11 +59,15 @@ module.exports = {
                         <div>
                             <p style="color:white; margin: 0;">Ikuti Kami</p>
                             <div style="display: flex;">
-                                <a href="https://www.w3schools.com">
+                                <a href="https://www.instagram.com/siggi.id/">
                                     <img src="https://img.icons8.com/fluency/36/000000/instagram-new.png" style="height: 36px; width: 36px"/>
                                 </a>
-                                <img src="https://img.icons8.com/color/36/000000/tiktok--v1.png" style="height: 36px; width: 36px"/>
-                                <img src="https://img.icons8.com/fluency/36/000000/domain.png" style="height: 36px; width: 36px"/>
+                                <a href="https://www.tiktok.com/@siggi.id">
+                                    <img src="https://img.icons8.com/color/36/000000/tiktok--v1.png" style="height: 36px; width: 36px"/>
+                                </a>
+                                <a href="http://siggi.netlify.app">
+                                    <img src="https://img.icons8.com/fluency/36/000000/domain.png" style="height: 36px; width: 36px"/>
+                                </a>
                             </div>
                             <p style="color: white; justify-content:center; font-size: 10px">Copyright &copy; SIGGI. All Right Reserved</p>
                         </div>
