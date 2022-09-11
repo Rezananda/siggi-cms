@@ -20,6 +20,7 @@
     "better-sqlite3": "7.4.6",
     "pg": "^8.7.3",
     "pg-connection-string": "^2.5.0",
+    "strapi-plugin-populate-deep": "^0.1.2",
     "strapi-provider-email-sendinblue": "^4.0.0"
   },
   "author": {

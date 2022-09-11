@@ -19,7 +19,7 @@
       "type": "biginteger"
     },
     "variant_discount": {
-      "type": "integer"
+      "type": "biginteger"
     },
     "product": {
       "type": "relation",
